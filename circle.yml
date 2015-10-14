@@ -10,7 +10,7 @@ dependencies:
 ## Running Tests
 test:
   pre:
-    - git clone 
+    - git clone https://github.com/Qxf2Circle/selenium_tutorial_test.git
     
   override:
-    - python tests/Navigate_Qxf2_Tutorial_Test.py
+    - python selenium_tutorial_test/Navigate_Qxf2_Tutorial_Test.py
