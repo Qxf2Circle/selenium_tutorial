@@ -1,0 +1,13 @@
+
+## Customize dependencies
+dependencies:
+  pre:
+    - sudo pip install -U selenium
+    - sudo apt-get install nginx
+     # Copy the html page to nginx default public www location
+    - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
+    
+## Running Tests
+test:
+  override:
+    - python tests/Qxf2_Tutorial_BrowserStack_Test.py
