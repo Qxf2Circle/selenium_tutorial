@@ -10,6 +10,7 @@ dependencies:
 ## Running Tests
 test:
   pre:
+  # The key call to clone the test repository before we can run the test
     - git clone https://github.com/Qxf2Circle/selenium_tutorial_test.git
     
   override:
