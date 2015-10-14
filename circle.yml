@@ -9,5 +9,8 @@ dependencies:
     
 ## Running Tests
 test:
+  pre:
+    - git clone 
+    
   override:
-    - python tests/Qxf2_Tutorial_BrowserStack_Test.py
+    - python tests/Navigate_Qxf2_Tutorial_Test.py
