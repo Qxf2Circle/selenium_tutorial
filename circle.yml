@@ -3,8 +3,8 @@
 dependencies:
   pre:
     - sudo pip install -U selenium
-    - sudo brew update
-    - sudo brew install nginx
+    - sudo apt-get update
+    - sudo apt-get install nginx
      # Copy the html page to nginx default public www location
     - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
     
