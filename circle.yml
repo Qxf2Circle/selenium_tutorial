@@ -19,6 +19,6 @@ test:
   post:
     - >
       if [ -n "${NIGHTLY_BUILD}" ]; then
-         python selenium_tutorial_test/Test1.py
-         python selenium_tutorial_test/Test2.py 
+         python ./selenium_tutorial_test/Test1.py
+         python ./selenium_tutorial_test/Test2.py 
       fi
