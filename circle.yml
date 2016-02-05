@@ -3,7 +3,6 @@
 dependencies:
   pre:
     - sudo pip install -U selenium
-    - sudo apt-get update
     - sudo apt-get install nginx
      # Copy the html page to nginx default public www location
     - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
@@ -19,6 +18,6 @@ test:
   post:
     - >
       if [ -n "${NIGHTLY_BUILD}" ]; then
-         python ./selenium_tutorial_test/Test1.py
-         python ./selenium_tutorial_test/Test2.py 
+         python selenium_tutorial_test/Test1.py
+         python selenium_tutorial_test/Test2.py 
       fi
